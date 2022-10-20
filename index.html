@@ -57,7 +57,7 @@
     <section class="hero">
         <div class="hero-center">
         <h1 class="hero-title">Ефективні рішення для<br/> вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <!--Головні переваги-->
@@ -112,9 +112,32 @@
     <div class="container">
         <h2 class="caption">Чим ми займаємося</h2>
         <ul class="caption-img">
-            <li class="item"><img src="./images/apply-robot1.jpg" alt="приклади робіт 1" width="370"></li>
-            <li class="item"><img src="./images/apply-robot2.jpg" alt="приклади робіт 2" width="370"></li>
-            <li class="item"><img src="./images/apply-robot3.jpg" alt="приклади робіт 3" width="370"></li>
+            <li class="item">
+                <div class="cap-box">
+                    <img src="./images/apply-robot1.jpg" alt="приклади робіт 1" width="370">
+                    <div class="cap-overlay">
+                        <p>Десктопні додатки</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="item">
+                <div class="cap-box">
+                    <img src="./images/apply-robot2.jpg" alt="приклади робіт 2" width="370">
+                    <div class="cap-overlay">
+                        <p>Мобільні додатки</p>
+                    </div>
+                </div>                           
+            </li>
+            
+            <li class="item">
+                <div class="cap-box">
+                    <img src="./images/apply-robot3.jpg" alt="приклади робіт 3" width="370">
+                    <div class="cap-overlay">
+                        <p>Дизайнерські рішення</p>
+                    </div>
+                </div>     
+            </li>
         </ul>
     </div>
     </section>
@@ -342,5 +365,18 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-but">
+                <svg width = 11px heigh = 11px>
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
